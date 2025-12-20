@@ -358,6 +358,15 @@ section:nth-of-type(6) button {
     justify-content: center;
 }
 
+.form-center form input[type="email"] {
+    height: 38px;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 1px solid #888;
+    border-radius: 2px;
+    min-width: 220px;
+}
+
 /* FOOTER */
 footer{
     background-color: #222;
