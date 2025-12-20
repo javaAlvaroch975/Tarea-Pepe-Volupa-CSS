@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Montserrat:wght@800&display=swap');
+
+/* Títulos de secciones 1, 4 y 5 */
+section:first-of-type h2,
+.section4 h2,
+section:nth-of-type(5) h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+
 /* HE DEJADO 2 ESPACIOS ENTRE "SECCIONES" PARA HACERLO MAS LEGIBLE */
 /* BODY */
 body {
@@ -5,7 +16,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 
 /* HEADER CON NAVS */
 header nav {
@@ -16,7 +26,7 @@ header nav {
 }
 
 header nav:first-child {
-    background-color: black;
+    background-color: #222;
     color: white;
     padding: 10px 20px;
 }
@@ -53,6 +63,24 @@ section:first-child {
     background-color: #f7f5f3;
 }
 
+section:first-child aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    min-width: 80px;
+    margin-right: 100px;
+    height: 100%;
+}
+
+section:first-child aside img {
+    width: 60px;
+    height: auto;
+    display: block;
+    margin: 0;
+    filter: none;
+}
+
 section:first-child img {
     height: 80vh;
     gap: 40px;
@@ -62,7 +90,7 @@ section:first-child img {
 section:first-child p {
     font-weight: bold;
     text-decoration: underline;
-    font-size: 14px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -276,7 +304,7 @@ section:nth-of-type(5) ul li:hover {
 
 
 /* SECTION 6 */
-.sec6-unificada {
+.section6 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px 15px;
