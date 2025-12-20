@@ -21,7 +21,7 @@
         </nav>
         
         <nav> <!-- parte inferior -->
-            <img src="./imagenes/logo.png" alt="VOLUPA Logo">
+            <img src="./imagenes/header/logo.png" alt="VOLUPA Logo">
             <ul>
                 <li><a href="#" aria-current="page">HOME </a></li>
                 <li><a href="#">MEN</a></li>
@@ -133,7 +133,7 @@
         </section>
 
         <!-- SECCION 6 -->
-        <section>
+        <section class="sec6-unificada" aria-labelledby="subscribe-title">
             <article>
                 <figure>
                     <img src="./imagenes/section5/modelo.avif" alt="Short Dress with Flounces">
@@ -182,36 +182,37 @@
                     <span>$210.00</span>
                 </figure>
             </article>
+            
             <div class="but-sec6">
                 <button>SEE NEW COLLECTION ></button>
             </div>
-        </section>
 
-        <section class="form-center" aria-labelledby="subscribe-title">
-            <h2 id="subscribe-title">Subscribe to get the latest updates</h2>
-            <form>
-                <label for="subscribe-email" class="visually-hidden"></label>
-                <input id="subscribe-email" type="email" placeholder="Email Address" required>
-                <button type="submit" class="btn-volupa" aria-label="Subscribe">
-                    <span aria-hidden="true">Enviar</span>
-                </button>
-            </form>
+            <div class="form-center" style="grid-column: 1 / -1;">
+                <h2 id="subscribe-title">Subscribe to get the latest updates</h2>
+                <form>
+                    <label for="subscribe-email" class="visually-hidden"></label>
+                    <input id="subscribe-email" type="email" placeholder="Email Address" required>
+                    <button type="submit" class="btn-volupa" aria-label="Subscribe">
+                        <span aria-hidden="true">Enviar</span>
+                    </button>
+                </form>
+            </div>
         </section>
         
     </main>
 
     <!-- FOOTER -->
     <footer>
-        <section>
-            <header>
-                <h2>VOLUPA</h2>
-            </header>
+        <aside>
+            <figure>
+                <img src="./imagenes/footer/logo black.png" alt="Logo VOLUPA">
+            </figure>
             <p>Praesent sollicitudin aliquam ornare. Suspendisse ornare justo mauris, in rhoncus dui rutrum sit amet placerat lorem dictum. Nullam consectetur augue eros, at porta mauris consequat vit. Praesent et convallis mauris. Pellentesque aliquet rutrum.</p>
             
             <figure>
-                <img src="#" alt="Metodos de pago aceptados: Visa, MasterCard PayPal">
+                <img src="./imagenes/footer/pagos.png" alt="Metodos de pago aceptados: Visa, MasterCard PayPal">
             </figure>
-        </section>
+        </aside>
 
             <table>
                 <tr>
@@ -221,26 +222,28 @@
                 </tr>
                 <tr>
                     <td>
-                        <p>Telefono: +700-327-7844</p>
-                        <p>Email: info@volupa.com</p>
-                        <p>Direccion: Via Salerno, 7 - 20121 Milano - Italy</p>
-                    </td>
-                    <td>
                         <ul>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Payments</a></li>
-                            <li><a href="#">Shipping Informations</a></li>
-                            <li><a href="#">Returns and Refunds</a></li>
-                            <li><a href="#">Frequently asked questions</a></li>
-                            <li><a href="#">Terms and Conditions</a></li>
+                            <li>Telefono: +700-327-7844</li>
+                            <li>Email: info@volupa.com</li>
+                            <li>Direccion: Via Salerno, 7 - 20121 Milano - Italy</li>
                         </ul>
                     </td>
                     <td>
                         <ul>
-                            <li><a href="#">Login</a></li>
-                            <li><a href="#">My orders</a></li>
-                            <li><a href="#">Personal Area</a></li>
-                            <li><a href="#">Wishlist</a></li>
+                            <li>Contact Us</li>
+                            <li>Payments</li>
+                            <li>Shipping Informations</li>
+                            <li>Returns and Refunds</li>
+                            <li>Frequently asked questions</li>
+                            <li>Terms and Conditions</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Login</li>
+                            <li>My orders</li>
+                            <li>Personal Area</li>
+                            <li>Wishlist</li>
                         </ul>
                     </td>
                 </tr>

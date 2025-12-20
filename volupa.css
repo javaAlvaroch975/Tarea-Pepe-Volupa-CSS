@@ -1,3 +1,5 @@
+/* HE DEJADO 2 ESPACIOS ENTRE "SECCIONES" PARA HACERLO MAS LEGIBLE */
+/* BODY */
 body {
     background-color: white;
     margin: 0;
@@ -274,7 +276,7 @@ section:nth-of-type(5) ul li:hover {
 
 
 /* SECTION 6 */
-section:nth-of-type(6) {
+.sec6-unificada {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px 15px;
@@ -311,6 +313,7 @@ section:nth-of-type(6) span {
 .but-sec6 {
     grid-column: 1 / -1;
     display: flex;
+    justify-content: center;
 }
 
 section:nth-of-type(6) button { 
@@ -335,11 +338,85 @@ section:nth-of-type(6) button {
     text-align: center;
 }
 
+.form-center {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 50px auto;
+}
+
+.form-center h2 {
+    text-align: center;
+}
+
 .form-center form {
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: center;
+}
+
+/* FOOTER */
+footer{
+    background-color: #222;
+    color: white;
+    padding: 40px 0 0 0;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+footer aside {
+    flex: 1 1 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 40px;
+    min-width: 320px;
+    max-width: 400px;
+}
+
+footer aside figure:last-of-type img {
+    width: 220px;
+    margin-top: 10px;
+}
+
+/* TABLA FOOTER */
+footer table {
+    flex: 2 1 600px;
+    width: 100%;
+    max-width: 700px;
+    background: none;
+}
+
+footer table th {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 18px;
+    text-align: left;
+}
+
+footer table td {
+    vertical-align: top;
+    text-align: left;
+    font-size: 15px;
+}
+
+footer table ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer table ul li {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #ccc;
 }
 
 
