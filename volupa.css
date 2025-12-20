@@ -5,7 +5,7 @@ body {
 }
 
 
-/* Header con navs*/
+/* HEADER CON NAVS */
 header nav {
     display: flex;
     align-items: center;
@@ -308,15 +308,38 @@ section:nth-of-type(6) span {
     font-weight: bold;
 }
 
+.but-sec6 {
+    grid-column: 1 / -1;
+    display: flex;
+}
+
 section:nth-of-type(6) button { 
     background: transparent;
     color: black;
     border: 2px solid black;
-    margin: 20px auto 0 auto;
-    display: block;
+    margin: 20px auto;
     padding: 12px 32px;
 }
 
-/* SECTION 7 */
+/* SEC 6 FORMULARIO  */
+.form-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    margin-bottom: 50px;
+}
+
+.form-center h2 {
+    text-align: center;
+}
+
+.form-center form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
 
 
