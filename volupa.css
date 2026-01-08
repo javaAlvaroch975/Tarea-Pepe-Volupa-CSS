@@ -274,25 +274,32 @@ header {
     text-align: center;
     padding: 30px 0;
     margin: 40px auto;
+}
 
-    h3 {
-        font-size: 50px;
-        font-weight: bold;
-        margin: 10px 0 15px 0;
-    }
+.section5 h4:first-of-type {
+    font-size: 16px;
+    color: #888;
+    margin: 0 0 8px 0;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
 
-    h4 {
-        font-size: 30px;
-        margin: 0 0 10px 0;
+.section5 h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    letter-spacing: -1px;
+}
 
-        &:last-of-type {
-            color: #888;
-            font-size: 15px;
-            margin: 0 auto;
-            max-width: 700px;
-            line-height: 1.5;
-        }
-    }
+.section5 h4:last-of-type {
+    color: #aaa;
+    font-size: 15px;
+    margin: 0 auto 18px auto;
+    max-width: 700px;
+    line-height: 1.5;
+    font-weight: 400;
+}
 
     ul {
         display: flex;
@@ -306,7 +313,6 @@ header {
             border-bottom: 3px solid #222;
         }
     }
-}
 
 
 /* SECTION 6 */
@@ -389,105 +395,63 @@ header {
 
 
 
-/* FOOTER*/
-footer {
-    background: #232323;
-    color: #fff;
-    padding: 48px 0 24px 0;
+/* FOOTER */
+footer{
+    background-color: #222;
+    color: white;
+    padding: 40px 0 0 0;
     margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+footer aside {
+    flex: 1 1 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 40px;
+    min-width: 320px;
+    max-width: 400px;
+}
+
+footer aside figure:last-of-type img {
+    width: 220px;
+    margin-top: 10px;
+}
+
+/* TABLA FOOTER */
+footer table {
+    flex: 2 1 600px;
     width: 100%;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    max-width: 700px;
+    background: none;
+}
 
-    .footer-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 40px;
-    }
+footer table th {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 18px;
+    text-align: left;
+}
 
-    aside {
-        flex: 1 1 320px;
-        min-width: 260px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+footer table td {
+    vertical-align: top;
+    text-align: left;
+    font-size: 15px;
+}
 
-        figure {
-            margin: 0 0 18px 0;
-        }
+footer table ul {
+    list-style: none;
+    padding: 0;
+}
 
-        img {
-            max-width: 180px;
-            height: auto;
-            display: block;
-        }
-
-        p {
-            color: #ccc;
-            font-size: 13px;
-            line-height: 1.5;
-            margin: 0 0 18px 0;
-            max-width: 340px;
-        }
-
-        .footer-payments {
-            margin-top: 18px;
-
-            img {
-                max-width: 140px;
-            }
-        }
-    }
-
-    table {
-        flex: 2 1 600px;
-        min-width: 320px;
-        border-collapse: collapse;
-        width: auto;
-        background: none;
-
-        th {
-            font-size: 16px;
-            font-weight: 600;
-            color: #fff;
-            padding-bottom: 16px;
-            text-align: left;
-        }
-
-        td {
-            vertical-align: top;
-            text-align: left;
-            padding: 0 32px 0 0;
-
-            ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-
-                li {
-                    font-size: 13px;
-                    color: #ccc;
-                    margin-bottom: 10px;
-                    line-height: 1.5;
-                }
-            }
-        }
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-
-        li {
-            font-size: 13px;
-            color: #ccc;
-            margin-bottom: 10px;
-            line-height: 1.5;
-        }
-    }
-
+footer table ul li {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #ccc;
 }
