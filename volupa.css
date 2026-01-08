@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Montserrat:wght@800&display=swap');
 
-/* Títulos de secciones 1, 4 y 5 */
-section:first-of-type h2,
+/* Titulos de secciones 1, 4 y 5 */
+.section1 h2,
 .section4 h2,
-section:nth-of-type(5) h3 {
+.section5 h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
 }
 
-
-/* HE DEJADO 2 ESPACIOS ENTRE "SECCIONES" PARA HACERLO MAS LEGIBLE */
 /* BODY */
 body {
     background-color: white;
@@ -18,43 +16,45 @@ body {
 }
 
 /* HEADER CON NAVS */
-header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px;
+header {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
 }
 
-header nav:first-child {
+.nav-top {
     background-color: #222;
     color: white;
     padding: 10px 20px;
+
+    div {
+        display: flex;
+        gap: 20px;
+    }
 }
 
-header nav:first-child div {
-    display: flex;
-    gap: 20px;
-}
-
-header nav:nth-child(2) {
+.nav-main {
     background-color: white;
-}
 
-header nav:nth-child(2) img {
-    height: 40px;
-}
+    img {
+        height: 40px;
+    }
 
-header nav:nth-child(2) ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 
 /* SECTION 1*/
-section:first-child {
+.section1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +63,7 @@ section:first-child {
     background-color: #f7f5f3;
 }
 
-section:first-child aside {
+.section1 aside {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -73,7 +73,7 @@ section:first-child aside {
     height: 100%;
 }
 
-section:first-child aside img {
+.section1 aside img {
     width: 60px;
     height: auto;
     display: block;
@@ -81,27 +81,27 @@ section:first-child aside img {
     filter: none;
 }
 
-section:first-child img {
+.section1 img {
     height: 80vh;
     gap: 40px;
     float: right;
 }
 
-section:first-child p {
+.section1 p {
     font-weight: bold;
     text-decoration: underline;
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-section:first-child h2 {
+.section1 h2 {
     font-size: 48px;
     line-height: 1.2;
     margin: 20px 0;
 }
 
-section:first-child button,
-section:first-child a {
+.section1 button,
+.section1 a {
     background-color: #ff6347;
     color: #fff;
     padding: 15px 30px;
@@ -113,7 +113,7 @@ section:first-child a {
 
 
 /* SECTION 2 */
-section:nth-of-type(2) {
+.section2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto auto;
@@ -124,30 +124,30 @@ section:nth-of-type(2) {
     max-width: 1200px;
 }
 
-section:nth-of-type(2) article:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
-section:nth-of-type(2) article:nth-child(2) { grid-area: 1 / 2 / 3 / 3; }
-section:nth-of-type(2) article:nth-child(3) { grid-area: 2 / 1 / 4 / 2; }
-section:nth-of-type(2) article:nth-child(4) { grid-area: 3 / 2 / 4 / 3; }
+.section2 .product-card:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
+.section2 .product-card:nth-child(2) { grid-area: 1 / 2 / 3 / 3; }
+.section2 .product-card:nth-child(3) { grid-area: 2 / 1 / 4 / 2; }
+.section2 .product-card:nth-child(4) { grid-area: 3 / 2 / 4 / 3; }
 
-section:nth-of-type(2) article {
+.section2 .product-card {
     position: relative;
     overflow: hidden;
     min-height: 350px;
 }
 
-section:nth-of-type(2) article figure {
+.section2 .product-card figure {
     position: absolute;
     inset: 0;
     margin: 0;
 }
 
-section:nth-of-type(2) article img {
+.section2 .product-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-section:nth-of-type(2) article::after {
+.section2 .product-card::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -158,29 +158,29 @@ section:nth-of-type(2) article::after {
     z-index: 1;
 }
 
-section:nth-of-type(2) article p,
-section:nth-of-type(2) article h3,
-section:nth-of-type(2) article a {
+.section2 .product-card p,
+.section2 .product-card h3,
+.section2 .product-card a {
     position: absolute;
     left: 30px;
     margin: 0;
     z-index: 2;
 }
 
-section:nth-of-type(2) article p {
+.section2 .product-card p {
     bottom: 80px;
     font-size: 12px;
     color: #999;
 }
 
-section:nth-of-type(2) article h3 {
+.section2 .product-card h3 {
     bottom: 45px;
     font-size: 20px;
     font-weight: 600;
     color: #222;
 }
 
-section:nth-of-type(2) article a {
+.section2 .product-card a {
     bottom: 20px;
     color: #ff6347;
     font-weight: 600;
@@ -189,18 +189,14 @@ section:nth-of-type(2) article a {
     text-transform: uppercase;
 }
 
-section:nth-of-type(2) article:nth-child(3)::after,
-section:nth-of-type(2) article:nth-child(4)::after {
+.section2 .product-card.align-right::after {
     left: auto;
     right: 0;
 }
 
-section:nth-of-type(2) article:nth-child(3) p,
-section:nth-of-type(2) article:nth-child(3) h3,
-section:nth-of-type(2) article:nth-child(3) a,
-section:nth-of-type(2) article:nth-child(4) p,
-section:nth-of-type(2) article:nth-child(4) h3,
-section:nth-of-type(2) article:nth-child(4) a {
+.section2 .product-card.align-right p,
+.section2 .product-card.align-right h3,
+.section2 .product-card.align-right a {
     left: auto;
     right: 30px;
     text-align: right;
@@ -208,7 +204,7 @@ section:nth-of-type(2) article:nth-child(4) a {
 
 
 /* SECTION 3 */
-section:nth-of-type(3) {
+.section3 {
     text-align: center;
     background: #fff;
     max-width: 1000px;
@@ -218,18 +214,18 @@ section:nth-of-type(3) {
     align-items: center; 
 }
 
-section:nth-of-type(3) article {
+.section3 article {
     flex: 1;
     padding: 0 20px;
 }
 
-section:nth-of-type(3) article:not(:last-child) {
+.section3 article:not(:last-child) {
     border-right: 1px solid #e0e0e0;
 }
 
 
 /* SECTION 4 */
-section:nth-of-type(4) {
+.section4 {
     background: url('./imagenes/section4/modelo hombre.png') no-repeat center center;
     background-size: cover;
     min-height: 500px;
@@ -239,7 +235,7 @@ section:nth-of-type(4) {
     color: white;
 }
 
-section:nth-of-type(4) button { 
+.section4 button { 
     background: transparent;
     color: white;
     border: 2px solid white;
@@ -248,7 +244,7 @@ section:nth-of-type(4) button {
     padding: 12px 32px;
 }
 
-section:nth-of-type(4) h2 { 
+.section4 h2 { 
     color: white;
     text-align: center;
     font-weight: bold;
@@ -256,7 +252,7 @@ section:nth-of-type(4) h2 {
     margin-bottom: 10px;
 }
 
-section:nth-of-type(4) h3 {
+.section4 h3 {
     color: white;
     text-align: center;
     font-size: 20px;
@@ -264,24 +260,24 @@ section:nth-of-type(4) h3 {
 
 
 /* SECTION 5 */
-section:nth-of-type(5) {
+.section5 {
     text-align: center;
     padding: 30px 0;
     margin: 40px auto;
 }
 
-section:nth-of-type(5) h3 {
+.section5 h3 {
     font-size: 50px;
     font-weight: bold;
     margin: 10px 0 15px 0;
 }
 
-section:nth-of-type(5) h4 {
+.section5 h4 {
     font-size: 30px;
     margin: 0 0 10px 0;
 }
 
-section:nth-of-type(5) h4:last-of-type {
+.section5 h4:last-of-type {
     color: #888;
     font-size: 15px;
     margin: 0 auto;
@@ -289,7 +285,7 @@ section:nth-of-type(5) h4:last-of-type {
     line-height: 1.5;
 }
 
-section:nth-of-type(5) ul {
+.section5 ul {
     display: flex;
     justify-content: center;
     gap: 60px;
@@ -298,7 +294,7 @@ section:nth-of-type(5) ul {
     margin: 30px 0 0 0;
 }
 
-section:nth-of-type(5) ul li:hover {
+.section5 ul li:hover {
     border-bottom: 3px solid #222;
 }    
 
@@ -313,7 +309,7 @@ section:nth-of-type(5) ul li:hover {
     padding: 0 20px;
 }
 
-section:nth-of-type(6) figure {
+.section6 figure {
     margin: 0;
     padding: 0;
     display: flex;
@@ -321,20 +317,19 @@ section:nth-of-type(6) figure {
     align-items: center;
 }
 
-section:nth-of-type(6) img {
+.section6 img {
     width: 100%;
     max-width: 320px;
     margin-bottom: 10px;
 }
 
-section:nth-of-type(6) p {
+.section6 p {
     font-size: 12px;
     color: #888;
     margin: 10px 0 0 0;
-
 }
 
-section:nth-of-type(6) span {
+.section6 span {
     font-weight: bold;
 }
 
@@ -344,7 +339,7 @@ section:nth-of-type(6) span {
     justify-content: center;
 }
 
-section:nth-of-type(6) button { 
+.section6 button { 
     background: transparent;
     color: black;
     border: 2px solid black;
