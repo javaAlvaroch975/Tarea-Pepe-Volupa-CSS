@@ -55,7 +55,7 @@ header {
 /* tocar luego -> section.productos (esta) / .seccion-productos*/
 
 /* SECTION 1*/
-.section1 { 
+ .dresses-looks {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,7 +108,7 @@ header {
 
 
 /* SECTION 2 */
-.section2 {
+ .clothes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto auto;
@@ -215,7 +215,7 @@ header {
 
 
 /* SECTION 3 */
-.section3 {
+ .shipping-payments {
     text-align: center;
     background: #fff;
     max-width: 1000px;
@@ -235,7 +235,7 @@ header {
 
 
 /* SECTION 4 */
-.section4 {
+ .stylish-collection {
     background: url('./imagenes/section4/modelo hombre.png') no-repeat center center;
     background-size: cover;
     min-height: 500px;
@@ -270,7 +270,7 @@ header {
 
 
 /* SECTION 5 */
-.section5 {
+ .new-arrivals {
     text-align: center;
     padding: 30px 0;
     margin: 40px auto;
@@ -316,7 +316,7 @@ header {
 
 
 /* SECTION 6 */
-.section6 {
+ .carrusel {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px 15px;
