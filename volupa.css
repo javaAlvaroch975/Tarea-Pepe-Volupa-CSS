@@ -52,9 +52,7 @@ header {
     }
 }
 
-/* tocar luego -> section.productos (esta) / .seccion-productos*/
-
-/* SECTION 1*/
+/* Dresses&Looks */
  .dresses-looks {
     display: flex;
     align-items: center;
@@ -107,7 +105,7 @@ header {
 }
 
 
-/* SECTION 2 */
+/* Clothes */
  .clothes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -214,7 +212,7 @@ header {
 }
 
 
-/* SECTION 3 */
+/* Shipping&Payments */
  .shipping-payments {
     text-align: center;
     background: #fff;
@@ -234,7 +232,7 @@ header {
 }
 
 
-/* SECTION 4 */
+/* StylishCollection */
  .stylish-collection {
     background: url('./imagenes/section4/modelo hombre.png') no-repeat center center;
     background-size: cover;
@@ -269,7 +267,7 @@ header {
 }
 
 
-/* SECTION 5 */
+/* NewArrivals */
  .new-arrivals {
     text-align: center;
     padding: 30px 0;
@@ -315,7 +313,7 @@ header {
     }
 
 
-/* SECTION 6 */
+/* Carrusel */
  .carrusel {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -471,6 +469,297 @@ footer {
                     padding-bottom: 8px;
                     color: #ccc;
                     font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+/* RESPONSIVE */
+/* TABLET */
+@media screen and (max-width: 1000px) {
+    
+    /* HEADER */
+    header nav {
+        padding: 15px 30px;
+    }
+    
+    .nav-main ul {
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    
+    /* Dresses&Looks */
+    .dresses-looks {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        
+        aside {
+            flex-direction: row;
+            margin-right: 0;
+            margin-bottom: 20px;
+            height: auto;
+            gap: 20px;
+            
+            img {
+                width: 50px;
+            }
+        }
+        
+        h2 {
+            font-size: 36px;
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
+        }
+    }
+    
+    
+    /* Clothes */
+    .clothes {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 30px;
+        
+        .product-card {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+                grid-area: auto;
+            }
+        }
+    }
+    
+
+    /* Shipping&Payments */
+    .shipping-payments {
+        flex-direction: column;
+        
+        article {
+            border-right: none !important;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 0;
+            
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+
+    
+    /* StylishCollection */
+    .stylish-collection {
+        h2 {
+            font-size: 50px;
+        }
+        
+        h3 {
+            font-size: 18px;
+        }
+    }
+    
+
+    /* Carrusel */
+    .carrusel {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 15px;
+    }
+    
+    /* FOOTER */
+    footer {
+        .footer-flex {
+            flex-direction: column;
+            
+            .footer-table-wrapper {
+                justify-content: center;
+                
+                .footer-table {
+                    min-width: auto;
+                }
+            }
+        }
+    }
+}
+
+
+/* MOVIL */
+@media screen and (max-width: 700px) {
+    
+    /* HEADER */
+    header nav {
+        padding: 10px 20px;
+    }
+    
+    .nav-top {
+        font-size: 12px;
+        
+        div {
+            gap: 10px;
+        }
+    }
+    
+    .nav-main {
+        ul {
+            gap: 15px;
+            font-size: 12px;
+        }
+        
+        img {
+            height: 30px;
+        }
+    }
+    
+
+    /* Dresses&Looks */
+    .dresses-looks {
+        padding: 30px 15px;
+        
+        aside {
+            img {
+                width: 40px;
+            }
+        }
+        
+        h2 {
+            font-size: 28px;
+        }
+        
+        p {
+            font-size: 16px;
+        }
+        
+        button,
+        a {
+            padding: 12px 24px;
+            font-size: 12px;
+        }
+    }
+    
+
+    /* Clothes */
+    .clothes {
+        padding: 20px 15px;
+        gap: 15px;
+        
+        .product-card {
+            min-height: 300px;
+            
+            &::after {
+                width: 70%;
+            }
+            
+            p,
+            h3,
+            a {
+                left: 20px;
+            }
+            
+            &.align-right {
+                p,
+                h3,
+                a {
+                    right: 20px;
+                }
+            }
+        }
+    }
+    
+
+    /* Shipping&Payments */
+    .shipping-payments {
+        padding: 20px 15px;
+    }
+    
+
+    /* StylishCollection */
+    .stylish-collection {
+        min-height: 400px;
+        padding: 20px;
+        
+        h2 {
+            font-size: 36px;
+        }
+        
+        h3 {
+            font-size: 16px;
+        }
+        
+        button {
+            padding: 10px 24px;
+        }
+    }
+    
+
+    /* NewArrivals */
+    .new-arrivals {
+        padding: 20px 15px;
+    }
+    
+    .section5 h3 {
+        font-size: 24px;
+    }
+    
+    .section5 ul {
+        gap: 20px;
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+    
+
+    /* Carrusel */
+    .carrusel {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 15px;
+        
+        img {
+            max-width: 100%;
+        }
+    }
+    
+    
+    /* FOOTER */
+    footer {
+        .footer-container,
+        .footer-flex {
+            padding: 0 20px;
+            
+            .footer-logo-section {
+                min-width: auto;
+                
+                img {
+                    width: 150px;
+                }
+            }
+            
+            .footer-table-wrapper {
+                min-width: auto;
+                
+                .footer-table {
+                    min-width: auto;
+                    
+                    th {
+                        font-size: 16px;
+                    }
+                    
+                    td {
+                        font-size: 14px;
+                    }
+                }
+            }
+            
+            .footer-payments {
+                flex-wrap: wrap;
+                gap: 12px;
+                
+                img {
+                    height: 24px;
                 }
             }
         }
