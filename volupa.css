@@ -331,8 +331,9 @@ header {
         }
 
         img {
-            width: 100%;
-            max-width: 320px;
+            width: 320px;
+            height: 480px;
+            object-fit: cover;
             margin-bottom: 10px;
         }
 
