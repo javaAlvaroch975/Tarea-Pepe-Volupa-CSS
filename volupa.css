@@ -234,7 +234,7 @@ header {
 
 /* StylishCollection */
  .stylish-collection {
-    background: url('./imagenes/section4/modelo hombre.png') no-repeat center center;
+    background: url('./imagenes/StylishCollection/modelohombre.png') no-repeat center center;
     background-size: cover;
     min-height: 500px;
     display: flex;
