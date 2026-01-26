@@ -17,6 +17,8 @@ body {
 
 /* HEADER CON NAVS */
 header {
+    padding-bottom: 20px;
+
     nav {
         display: flex;
         align-items: center;
