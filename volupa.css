@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Montserrat:wght@800&display=swap');
 
-/* Titulos de secciones 1, 4 y 5 */
-.section1 h2,
-.section4 h2,
-.section5 h3 {
+/* Títulos de Dresses&Looks, StylishCollection y NewArrivals */
+.dresses-looks h2,
+.stylish-collection h2,
+.new-arrivals h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
 }
@@ -274,7 +274,7 @@ header {
     margin: 40px auto;
 }
 
-.section5 h4:first-of-type {
+.new-arrivals h4:first-of-type {
     font-size: 16px;
     color: #888;
     margin: 0 0 8px 0;
@@ -282,7 +282,7 @@ header {
     letter-spacing: 0.5px;
 }
 
-.section5 h3 {
+.new-arrivals h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 800;
@@ -290,7 +290,7 @@ header {
     letter-spacing: -1px;
 }
 
-.section5 h4:last-of-type {
+.new-arrivals h4:last-of-type {
     color: #aaa;
     font-size: 15px;
     margin: 0 auto 18px auto;
@@ -701,11 +701,11 @@ footer {
         padding: 20px 15px;
     }
     
-    .section5 h3 {
+    .new-arrivals h3 {
         font-size: 24px;
     }
     
-    .section5 ul {
+    .new-arrivals ul {
         gap: 20px;
         font-size: 14px;
         flex-wrap: wrap;
