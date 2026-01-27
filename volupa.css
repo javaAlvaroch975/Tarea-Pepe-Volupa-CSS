@@ -2,8 +2,7 @@
 
 /* Títulos de Dresses&Looks, StylishCollection y NewArrivals */
 .dresses-looks h2,
-.stylish-collection h2,
-.new-arrivals h3 {
+.stylish-collection h2{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
 }
@@ -296,8 +295,8 @@ header {
 }
 
 .new-arrivals h4:first-of-type {
-    font-size: 16px;
-    color: #888;
+    font-size: 18px;
+    color: #000;
     margin: 0 0 8px 0;
     font-weight: 400;
     letter-spacing: 0.5px;
@@ -305,7 +304,7 @@ header {
 
 .new-arrivals h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
+    font-size: 54px;
     font-weight: 800;
     margin: 0 0 10px 0;
     letter-spacing: -1px;
@@ -315,9 +314,11 @@ header {
     color: #aaa;
     font-size: 15px;
     margin: 0 auto 18px auto;
-    max-width: 700px;
     line-height: 1.5;
     font-weight: 400;
+    text-align: center;
+    max-width: 900px;
+    word-wrap: break-word;
 }
 
     ul {
