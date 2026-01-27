@@ -7,11 +7,6 @@
     font-weight: 800;
 }
 
-.form-center h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 60px;
-}
 
 /* BODY */
 body {
@@ -45,6 +40,12 @@ header {
 
 .nav-main {
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
 
     img {
         height: 40px;
@@ -58,6 +59,7 @@ header {
         padding: 0;
     }
 }
+
 
 /* Dresses&Looks */
  .dresses-looks {
@@ -396,6 +398,9 @@ header {
                 margin-top: 10px;
                 text-align: center;
                 max-width: 600px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 800;
+                font-size: 60px;
             }
 
             .iconos {
