@@ -58,6 +58,10 @@ header {
         margin: 0;
         padding: 0;
     }
+
+    a:hover {
+        color: #ff6347;
+    }
 }
 
 
@@ -96,7 +100,8 @@ header {
     }
 
     h2 {
-        font-size: 48px;
+        font-size: 50px;
+        max-width: 650px;
         line-height: 1.2;
         margin: 20px 0;
     }
@@ -547,7 +552,8 @@ footer {
         }
         
         h2 {
-            font-size: 36px;
+            font-size: 50px;
+            max-width: 500px;
             text-align: center;
         }
         
@@ -665,6 +671,7 @@ footer {
         
         h2 {
             font-size: 28px;
+            max-width: 300px;
         }
         
         p {
