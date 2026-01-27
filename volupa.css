@@ -18,19 +18,23 @@ body {
 /* HEADER CON NAVS */
 header {
     padding-bottom: 20px;
-
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px 40px;
-    }
 }
 
 .nav-top {
     background-color: #222;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+
+    > div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        width: 100%;
+        padding: 20 40px;
+    }
 
     div {
         display: flex;
@@ -100,7 +104,7 @@ header {
     }
 
     h2 {
-        font-size: 50px;
+        font-size: 70px;
         max-width: 650px;
         line-height: 1.2;
         margin: 20px 0;
@@ -255,6 +259,12 @@ header {
         &:not(:last-child) {
             border-right: 1px solid #e0e0e0;
         }
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
     }
 }
 
