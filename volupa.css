@@ -114,14 +114,14 @@ header {
         min-width: 80px;
         margin-right: 40px;
         height: 100%;
+    }
 
-        img {
-            width: 60px;
-            height: auto;
-            display: block;
-            margin: 0;
-            filter: none;
-        }
+    aside img {
+        width: 60px;
+        height: auto;
+        display: block;
+        margin: 0;
+        filter: none;
     }
 
     p {
@@ -149,17 +149,13 @@ header {
         border: none;
     }
 
-    > figure {
-        height: 100%;
-        display: flex;
-        align-items: flex-end;
+    > img:last-child {
+        height: 95%;
+        width: auto;
+        object-fit: contain;
+        align-self: flex-end;
         margin: 0;
-
-        img {
-            height: 95%;
-            width: auto;
-            object-fit: contain;
-        }
+        display: flex;
     }
 }
 
