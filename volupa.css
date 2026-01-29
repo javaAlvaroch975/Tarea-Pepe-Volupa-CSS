@@ -20,6 +20,34 @@ header {
     padding-bottom: 20px;
 }
 
+.form-money-language {
+    background: transparent;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.form-money-language select {
+    background: #222;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.form-money-language select:focus {
+    border: 1.5px solid #ff6347;
+}
+
+#coin-select {
+    min-width: 80px;
+}
+
 .nav-top {
     background-color: #222;
     color: white;

@@ -10,10 +10,20 @@
     <header> <!-- HEADER PRINCIPAL DE LA PAGINA-->
         <nav class="nav-top"> <!-- parte superior -->
             <div>
-                <div>
-                    <span>ENG</span>
-                    <span>$ USD</span>
-                </div>
+                <form class="form-money-language" action="#" method="get">
+                    <label for="language-select" style="display:none;">Idioma</label>
+                    <select id="language-select" name="language">
+                        <option value="en">ENG</option>
+                        <option value="es">ESP</option>
+                        <option value="fr">FRA</option>
+                    </select>
+                    <label for="coin-select" style="display:none;">Moneda</label>
+                    <select id="coin-select" name="currency">
+                        <option value="usd">$ USD</option>
+                        <option value="eur">€ EUR</option>
+                        <option value="mxn">$ MXN</option>
+                    </select>
+                </form>
                 <div>
                     <a href="#">MY ACCOUNT</a>
                     <a href="#">3 ITEMS</a>
