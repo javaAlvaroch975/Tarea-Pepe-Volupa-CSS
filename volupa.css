@@ -407,14 +407,15 @@ header {
             margin-bottom: 10px;
         }
 
-        p {
-            font-size: 12px;
+        span:first-of-type {
+            font-size: 14px;
             color: #888;
             margin: 10px 0 0 0;
         }
 
-        span {
+        span:last-of-type {
             font-weight: bold;
+            color: #222;
         }
 
         button {
@@ -755,14 +756,14 @@ footer {
                 width: 70%;
             }
             
-            p,
+            span,
             h3,
             a {
                 left: 20px;
             }
             
             &.align-right {
-                p,
+                span,
                 h3,
                 a {
                     right: 20px;
