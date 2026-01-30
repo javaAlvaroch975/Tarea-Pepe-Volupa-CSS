@@ -123,7 +123,7 @@ header {
         filter: none;
     }
 
-    p {
+    span {
         font-weight: bold;
         text-decoration: underline;
         font-size: 20px;
@@ -211,7 +211,7 @@ header {
             z-index: 1;
         }
 
-        p {
+        span {
             position: absolute;
             left: 30px;
             margin: 0;
@@ -251,7 +251,7 @@ header {
                 right: 0;
             }
 
-            p,
+            span,
             h3,
             a {
                 left: auto;
@@ -293,7 +293,7 @@ header {
         color: #222;
     }
 
-    p {
+    span {
         color: #777;
         font-size: 14px;
     }
