@@ -30,11 +30,11 @@ header {
 .form-money-language select {
     background: #222;
     color: #fff;
-    border: 1px solid #444;
+    border: none;
+    box-shadow: none;
     border-radius: 4px;
     padding: 4px 12px;
     font-size: 14px;
-    font-family: inherit;
     outline: none;
     transition: border 0.2s;
 }
@@ -482,7 +482,6 @@ footer {
     background: #222;
     color: #fff;
     padding: 40px 0 0 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
 
         .footer {
         max-width: 1200px;
