@@ -7,7 +7,6 @@
     color: #222;
 }
 
-
 /* BODY */
 body {
     background-color: white;
@@ -48,7 +47,7 @@ header {
     min-width: 80px;
 }
 
-.nav-top {
+.header-top {
     background-color: #222;
     color: white;
     padding: 10px 0;
@@ -706,7 +705,7 @@ footer {
         padding: 10px 20px;
     }
     
-    .nav-top {
+    .header-top {
         font-size: 12px;
         
         div {
