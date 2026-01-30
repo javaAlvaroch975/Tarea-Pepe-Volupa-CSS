@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Montserrat:wght@800&display=swap');
 
 /* Títulos de Dresses&Looks, StylishCollection y NewArrivals */
-.dresses-looks h2,
-.stylish-collection h2{
+.section-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+    color: #222;
 }
 
 
