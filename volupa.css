@@ -1,20 +1,3 @@
-/* Ajuste para spans que reemplazan a los p en secciones semánticas */
-.dresses-looks article header span,
-.clothes .product-card span,
-.shipping-payments article span {
-    font-weight: 400;
-    text-decoration: none;
-    font-size: 15px;
-    color: #888;
-    display: block;
-    margin-top: 16px;
-    margin-bottom: 0;
-    line-height: 1.5;
-    text-align: center;
-    max-width: 260px;
-    margin-left: auto;
-    margin-right: auto;
-}
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Montserrat:wght@800&display=swap');
 
 /* Títulos de Dresses&Looks, StylishCollection y NewArrivals */
