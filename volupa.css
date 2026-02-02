@@ -94,7 +94,7 @@ nav {
     ul {
         display: flex;
         list-style: none;
-        gap: 30px;
+        gap: 60px;
         margin: 0;
         padding: 0;
     }
