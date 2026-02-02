@@ -8,7 +8,7 @@
 </head>
 <body>
     <header> <!-- HEADER PRINCIPAL DE LA PAGINA-->
-        <nav class="nav-top"> <!-- parte superior -->
+        <div class="header-top"> <!-- parte superior -->
             <div>
                 <form class="form-money-language" action="#" method="get">
                     <label for="language-select" style="display:none;">Idioma</label>
@@ -30,12 +30,12 @@
                     <a href="#">MY ACCOUNT</a>
                 </div>
             </div>
-        </nav>
+        </div>
         
-        <nav class="nav-main"> <!-- parte inferior -->
+        <nav> <!-- parte inferior -->
             <img src="./imagenes/header/logo.png" alt="VOLUPA Logo">
             <ul>
-                <li><a href="#" aria-current="page">HOME </a></li>
+                <li><a href="#">HOME </a></li>
                 <li><a href="#">MEN</a></li>
                 <li><a href="#">WOMAN</a></li>
                 <li><a href="#">SHOP</a></li>
@@ -49,55 +49,41 @@
         <!-- Section 1: Dresses&Looks -->
         <section class="dresses-looks">
             <aside>
-                <figure>
-                    <img src="./imagenes/Dresses&Looks/numeros.png" alt="Numeros">
-                </figure>
+                <img src="./imagenes/Dresses&Looks/numeros.png" alt="Numeros">
             </aside>
             <article>
-                <header>
                     <span>NEW ARRIVAL 2020</span>
-                    <h2>Admire Stylish Dresses & Looks</h2>
-                </header>
+                    <h2 class="section-title">Admire Stylish Dresses & Looks</h2>
                 <a href="https://www.youtube.com" target="_blank" class="btn-volupa">SEE MY NEW COLLECTION</a>
             </article>
-            <figure>
-                <img src="./imagenes/Dresses&Looks/modelo.png" alt="Mujer">
-            </figure>
+            <img src="./imagenes/Dresses&Looks/modelo.png" alt="Mujer">
         </section>
 
         <!-- Section 2: Clothes -->
         <section class="clothes">          
             <article class="product-card"> <!-- recuadro Men accesories -->   
-                <figure>
-                    <img src="./imagenes/Clothes/zapatos.png" alt="Accesorios para hombre">
-                </figure> 
+                <img src="./imagenes/Clothes/zapatos.png" alt="Accesorios para hombre">
                 <span>Over 1400 Products</span>
                 <h3>Men's Accesories</h3>
                 <a href="#">SEE NEW ARRIVAL</a>
             </article>
 
             <article class="product-card"> <!-- recuadro Men clothing -->
-                <figure> 
-                    <img src="./imagenes/Clothes/hombre.png" alt="Hombre traje">
-                </figure>
+                <img src="./imagenes/Clothes/hombre.png" alt="Hombre traje">
                 <span>Over 1400 Products</span>
                 <h3>Men's Clothing</h3>
                 <a href="#">SEE NEW ARRIVAL</a>
             </article>
 
             <article class="product-card align-right"> <!-- recuadro Women's clothing -->
-                <figure> 
-                    <img src="./imagenes/Clothes/mujer.png" alt="Mujer sueter gris">
-                </figure>
+                <img src="./imagenes/Clothes/mujer.png" alt="Mujer sueter gris">
                 <span>Over 1400 Products</span>
                 <h3>Women's Clothing</h3>
                 <a href="#">SEE NEW ARRIVAL</a>
             </article>
 
             <article class="product-card align-right"> <!-- recuadro Women's accesories --> 
-                <figure> 
-                    <img src="./imagenes/Clothes/ropa.png" alt="Accesorios para mujer - bolsos coloridos">
-                </figure>
+                <img src="./imagenes/Clothes/ropa.png" alt="Accesorios para mujer - bolsos coloridos">
                 <span>Over 1400 Products</span>
                 <h3>Women's Accesories</h3>
                 <a href="#">SEE NEW ARRIVAL</a>
@@ -128,18 +114,18 @@
         <!-- Section 4: StylishCollection -->
         <section class="stylish-collection">
             <article>
-                <figure class="section4-content">
-                    <h2>STYLISH COLLECTION</h2>
+                <div class="section4-content">
+                    <h2 class="section-title">STYLISH COLLECTION</h2>
                     <h3>NEW ARRIVAL 2020 ADMIRE STYLISH DRESSES & LOOKS.</h3>
                     <button>SEE NEW COLLECTION</button>
-                </figure>
+                </div>
             </article>
         </section>
 
         <!-- Section 5: NewArrivals -->
         <section class="new-arrivals">
             <h4>Wardrobe Change is Comming</h4>
-            <h3>New Arrivals</h3>
+            <h3 class="section-title">New Arrivals</h3>
             <h4>Aliquam rutrum pulvinar tortor, vel fermentum tellus tincidunt vitae. Aenean interdum sagittis diam, vel congue neque rutrum in. Fusce eget mi pretium, imperdiet orci quis, bibendum ipsum.</h4>
             <ul>
                 <li>WOMEN'S FASHION</li>
@@ -152,52 +138,40 @@
         <!-- Section 6: Carrusel -->
         <section class="carrusel">
             <article>
-                <figure>
-                    <img src="./imagenes/Carrusel/modelo.png" alt="Short Dress with Flounces">
-                    <p>WOMEN'S FASHION</p>
-                    <h3>SHORT DRESS WITH FLOUNCES</h3>
-                    <span>$39.00</span>
-                </figure>
+                <img src="./imagenes/Carrusel/modelo.png" alt="Short Dress with Flounces">
+                <span>WOMEN'S FASHION</span>
+                <h3>SHORT DRESS WITH FLOUNCES</h3>
+                <span>$39.00</span>
             </article>
             <article>
-                <figure>
-                    <img src="./imagenes/Carrusel/modelo2.png" alt="White Shirt and Plaid Skirt">
-                    <p>WOMEN'S FASHION</p>
-                    <h3>WHITE SHIRT AND PLAID SKIRT</h3>
-                    <span>$370.00</span>
-                </figure>
+                <img src="./imagenes/Carrusel/modelo2.png" alt="White Shirt and Plaid Skirt">
+                <span>WOMEN'S FASHION</span>
+                <h3>WHITE SHIRT AND PLAID SKIRT</h3>
+                <span>$370.00</span>
             </article>
             <article>
-                <figure>
-                    <img src="./imagenes/Carrusel/modelo3.png" alt="Short Shirt Dress">
-                    <p>WOMEN'S FASHION</p>
-                    <h3>SHORT SHIRT DRESS</h3>
-                    <span>$190.00</span>
-                </figure>
+                <img src="./imagenes/Carrusel/modelo3.png" alt="Short Shirt Dress">
+                <span>WOMEN'S FASHION</span>
+                <h3>SHORT SHIRT DRESS</h3>
+                <span>$190.00</span>
             </article>
             <article>
-                <figure>
-                    <img src="./imagenes/Carrusel/modelo4.png" alt="Blazer-Style Sleeveless Dress">
-                    <p>WOMEN'S FASHION</p>
-                    <h3>BLAZER-STYLE SLEEVELESS DRESS</h3>
-                    <span>$250.00</span>
-                </figure>
+                <img src="./imagenes/Carrusel/modelo4.png" alt="Blazer-Style Sleeveless Dress">
+                <span>WOMEN'S FASHION</span>
+                <h3>BLAZER-STYLE SLEEVELESS DRESS</h3>
+                <span>$250.00</span>
             </article>
             <article>
-                <figure>
-                    <img src="./imagenes/Carrusel/modelo5.png" alt="Uppard T-Shirt">
-                    <p>WOMEN'S FASHION</p>
-                    <h3>UPPARD T-SHIRT</h3>
-                    <span>$110.00</span>
-                </figure>
+                <img src="./imagenes/Carrusel/modelo5.png" alt="Uppard T-Shirt">
+                <span>WOMEN'S FASHION</span>
+                <h3>UPPARD T-SHIRT</h3>
+                <span>$110.00</span>
             </article>
             <article>
-                <figure>
-                    <img src="./imagenes/Carrusel/modelo6.png" alt="Uppard T-Shirt">
-                    <p>WOMEN'S FASHION</p>
-                    <h3>UPPARD T-SHIRT</h3>
-                    <span>$210.00</span>
-                </figure>
+                <img src="./imagenes/Carrusel/modelo6.png" alt="Uppard T-Shirt">
+                <span>WOMEN'S FASHION</span>
+                <h3>UPPARD T-SHIRT</h3>
+                <span>$210.00</span>
             </article>
             
             <div class="but-sec6">
@@ -206,12 +180,12 @@
 
             <!-- Formulario Sec 6 -->
             <div class="form-center" style="grid-column: 1 / -1;">
-                <h2 id="subscribe-title">Subscribe to get the latest updates</h2>
+                <h2 class="section-title"">Subscribe to get the latest updates</h2>
                 <form>
                     <label for="subscribe-email" class="visually-hidden"></label>
                     <input id="subscribe-email" type="email" placeholder="Email Address" required>
-                    <button type="submit" class="btn-volupa" aria-label="Subscribe">
-                        <span aria-hidden="true">Enviar</span>
+                    <button type="submit" class="btn-volupa" ">
+                        <span">Enviar</span>
                     </button>
                 
                 </form>
@@ -221,11 +195,11 @@
     </main>
 
 
-    <footer>
+<footer>
                 <div class="footer">
                     <div class="footer-logo">
                         <img src="./imagenes/footer/logo black.png" alt="VOLUPA Logo">
-                        <p>Praesent sollicitudin aliquam ornare. Suspendisse ornare justo rhoncus dui rutrum, sit amet placerat libero dictum. Nullam consectetur augue eros et aliquet velit egestas vitae. Praesent sollicitudin aliquam ornare. Suspendisse ornare justo rhoncus dui rutrum.</p>
+                        <span>Praesent sollicitudin aliquam ornare. Suspendisse ornare justo rhoncus dui rutrum, sit amet placerat libero dictum. Nullam consectetur augue eros et aliquet velit egestas vitae. Praesent sollicitudin aliquam ornare. Suspendisse ornare justo rhoncus dui rutrum.</span>
                         <div class="footer-payments">
                             <img src="./imagenes/footer/pagos.png" alt="Métodos de pago">
                         </div>

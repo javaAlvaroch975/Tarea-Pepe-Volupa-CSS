@@ -18,12 +18,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Montserrat:wght@800&display=swap');
 
 /* Títulos de Dresses&Looks, StylishCollection y NewArrivals */
-.dresses-looks h2,
-.stylish-collection h2{
+.section-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+    color: #222;
 }
-
 
 /* BODY */
 body {
@@ -48,11 +47,11 @@ header {
 .form-money-language select {
     background: #222;
     color: #fff;
-    border: 1px solid #444;
+    border: none;
+    box-shadow: none;
     border-radius: 4px;
     padding: 4px 12px;
     font-size: 14px;
-    font-family: inherit;
     outline: none;
     transition: border 0.2s;
 }
@@ -65,7 +64,7 @@ header {
     min-width: 80px;
 }
 
-.nav-top {
+.header-top {
     background-color: #222;
     color: white;
     padding: 10px 0;
@@ -85,9 +84,18 @@ header {
         display: flex;
         gap: 20px;
     }
+
+    a {
+        text-decoration: none;
+        color: white;
+        
+        &:visited {
+            color: white;
+        }
+    }
 }
 
-.nav-main {
+nav {
     background-color: white;
     display: flex;
     align-items: center;
@@ -103,13 +111,22 @@ header {
     ul {
         display: flex;
         list-style: none;
-        gap: 30px;
+        gap: 60px;
         margin: 0;
         padding: 0;
     }
-
-    a:hover {
-        color: #ff6347;
+    
+    a {
+        text-decoration: none;
+        color: black;
+        
+        &:visited {
+            color: black;
+        }
+        
+        &:hover {
+            color: #ff6347;
+        }
     }
 }
 
@@ -131,17 +148,18 @@ header {
         min-width: 80px;
         margin-right: 40px;
         height: 100%;
+
+        img {
+            width: 60px;
+            height: auto;
+            display: block;
+            margin: 0;
+            filter: none;
+        }
     }
 
-    aside img {
-        width: 60px;
-        height: auto;
-        display: block;
-        margin: 0;
-        filter: none;
-    }
 
-    p {
+    span {
         font-weight: bold;
         text-decoration: underline;
         font-size: 20px;
@@ -209,13 +227,10 @@ header {
             grid-area: 3 / 2 / 4 / 3;
         }
 
-        figure {
+        img {
             position: absolute;
             inset: 0;
             margin: 0;
-        }
-
-        img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -232,7 +247,7 @@ header {
             z-index: 1;
         }
 
-        p {
+        span {
             position: absolute;
             left: 30px;
             margin: 0;
@@ -272,7 +287,7 @@ header {
                 right: 0;
             }
 
-            p,
+            span,
             h3,
             a {
                 left: auto;
@@ -306,6 +321,17 @@ header {
         width: 60px;
         height: 60px;
         margin-bottom: 15px;
+    }
+
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        color: #222;
+    }
+
+    span {
+        color: #777;
+        font-size: 14px;
     }
 }
 
@@ -402,7 +428,7 @@ header {
     margin: 60px auto;
     padding: 0 20px;
 
-        figure {
+        article {
             margin: 0;
             padding: 0;
             display: flex;
@@ -417,14 +443,15 @@ header {
             margin-bottom: 10px;
         }
 
-        p {
-            font-size: 12px;
+        span:first-of-type {
+            font-size: 14px;
             color: #888;
             margin: 10px 0 0 0;
         }
 
-        span {
+        span:last-of-type {
             font-weight: bold;
+            color: #222;
         }
 
         button {
@@ -489,7 +516,6 @@ footer {
     background: #222;
     color: #fff;
     padding: 40px 0 0 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
 
         .footer {
         max-width: 1200px;
@@ -512,11 +538,12 @@ footer {
                 margin-bottom: 20px;
             }
 
-            p {
-                color: #ccc;
+            span {
+                color: #fff;
                 font-size: 15px;
                 line-height: 1.6;
                 margin-bottom: 30px;
+                display: block;
             }
         }
 
@@ -624,14 +651,9 @@ footer {
             text-align: center;
         }
         
-        > figure {
+        > img:last-child {
             height: auto;
-            max-height: 500px;
-            
-            img {
-                height: auto;
-                max-height: 450px;
-            }
+            max-height: 450px;
         }
     }
     
@@ -712,7 +734,7 @@ footer {
         padding: 10px 20px;
     }
     
-    .nav-top {
+    .header-top {
         font-size: 12px;
         
         div {
@@ -771,14 +793,14 @@ footer {
                 width: 70%;
             }
             
-            p,
+            span,
             h3,
             a {
                 left: 20px;
             }
             
             &.align-right {
-                p,
+                span,
                 h3,
                 a {
                     right: 20px;
