@@ -68,13 +68,17 @@ header {
         gap: 20px;
     }
 
-    a:visited {
-        color: white;
+    a {
         text-decoration: none;
+        color: white;
+        
+        &:visited {
+            color: white;
+        }
     }
 }
 
-.nav-main {
+nav {
     background-color: white;
     display: flex;
     align-items: center;
@@ -94,20 +98,19 @@ header {
         margin: 0;
         padding: 0;
     }
-    a{
+    
+    a {
         text-decoration: none;
-            :visited {
+        color: black;
+        
+        &:visited {
             color: black;
         }
-            :hover {
+        
+        &:hover {
             color: #ff6347;
         }
-
     }
-
-
-
-    
 }
 
 
@@ -128,15 +131,16 @@ header {
         min-width: 80px;
         margin-right: 40px;
         height: 100%;
+
+        img {
+            width: 60px;
+            height: auto;
+            display: block;
+            margin: 0;
+            filter: none;
+        }
     }
 
-    aside img {
-        width: 60px;
-        height: auto;
-        display: block;
-        margin: 0;
-        filter: none;
-    }
 
     span {
         font-weight: bold;
@@ -517,11 +521,12 @@ footer {
                 margin-bottom: 20px;
             }
 
-            p {
-                color: #ccc;
+            span {
+                color: #fff;
                 font-size: 15px;
                 line-height: 1.6;
                 margin-bottom: 30px;
+                display: block;
             }
         }
 
