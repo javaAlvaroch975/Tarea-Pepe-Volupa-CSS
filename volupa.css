@@ -180,14 +180,26 @@ nav {
 
 /* Clothes */
  .clothes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto auto;
-    gap: 20px;
     padding: 40px;
     background-color: white;
     margin: 40px auto;
     max-width: 1200px;
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 
     .product-card {
         position: relative;
@@ -707,9 +719,12 @@ footer {
     
     /* Clothes */
     .clothes {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
         padding: 30px;
+
+        ul {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
         
         .product-card {
             &:nth-child(1),
@@ -894,6 +909,10 @@ footer {
     .clothes {
         padding: 20px 15px;
         gap: 15px;
+
+        ul {
+            gap: 15px;
+        }
         
         .product-card {
             min-height: 300px;
