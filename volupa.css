@@ -360,7 +360,7 @@ nav {
     padding: 30px 0;
     margin: 40px auto;
 
-    h4:first-of-type {
+    span {
         font-size: 18px;
         color: #000;
         margin: 0 0 8px 0;
@@ -368,7 +368,7 @@ nav {
         letter-spacing: 0.5px;
     }
 
-    h4:last-of-type {
+    p {
         color: #aaa;
         font-size: 15px;
         margin: 0 auto 18px auto;
@@ -379,7 +379,7 @@ nav {
         word-wrap: break-word;
     }
 
-    h3 {
+    h2 {
         font-family: 'Montserrat', sans-serif;
         font-size: 54px;
         font-weight: 800;
@@ -404,12 +404,24 @@ nav {
 
 /* Carrusel */
  .carrusel {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px 15px;
     max-width: 1200px;
     margin: 60px auto;
     padding: 0 20px;
+
+        .car-imagenes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px 15px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .car-imagenes li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
 
         article {
             margin: 0;
@@ -446,14 +458,12 @@ nav {
         }
 
         .but-sec6 {
-            grid-column: 1 / -1;
             display: flex;
             justify-content: center;
         }
 
         /* SEC 6 FORMULARIO  */
         .form-center {
-            grid-column: 1 / -1;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -742,8 +752,10 @@ footer {
 
     /* Carrusel */
     .carrusel {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px 15px;
+        .car-imagenes {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px 15px;
+        }
     }
     
     /* FOOTER */
@@ -950,9 +962,12 @@ footer {
 
     /* Carrusel */
     .carrusel {
-        grid-template-columns: 1fr;
-        gap: 30px;
         padding: 0 15px;
+
+        .car-imagenes {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
         
         img {
             max-width: 100%;
