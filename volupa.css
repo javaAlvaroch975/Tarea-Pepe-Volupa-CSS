@@ -619,147 +619,226 @@ footer {
 /* RESPONSIVE */
 /* TABLET */
 @media screen and (max-width: 1000px) {
+    
+    /* HEADER */
+    header {
+        padding-bottom: 15px;
+    }
+    
     .header-top {
+        font-size: 13px;
+        padding: 8px 0;
+        
         > div:first-child {
-            padding: 8px 20px;
-            gap: 10px;
-            flex-wrap: wrap;
+            padding: 0 30px;
         }
-
+        
         div {
-            gap: 12px;
-            flex-wrap: wrap;
+            gap: 15px;
         }
     }
-
+    
+    .form-money-language {
+        margin-right: 0;
+        
+        select {
+            font-size: 12px;
+            padding: 3px 10px;
+        }
+    }
+    
     nav {
-        padding: 8px 20px;
-        gap: 20px;
-
+        padding: 15px 30px;
+        
+        img {
+            height: 35px;
+        }
+        
         ul {
             gap: 30px;
-            flex-wrap: wrap;
-            justify-content: center;
+            font-size: 14px;
         }
     }
 
+    
+    /* Dresses&Looks */
     .dresses-looks {
+        flex-direction: column;
         height: auto;
-        padding: 40px 20px;
-        gap: 30px;
-        flex-wrap: wrap;
-
+        padding: 40px 30px;
+        gap: 25px;
+        
         aside {
-            align-items: center;
+            flex-direction: row;
             margin-right: 0;
+            margin-bottom: 0;
             height: auto;
+            gap: 12px;
+            align-items: center;
+            justify-content: center;
+            order: 1;
+            min-width: auto;
+            
+            img {
+                width: 40px;
+                height: auto;
+            }
         }
-
+        
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            order: 2;
+            width: 100%;
+        }
+        
+        span {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        
         h2 {
-            font-size: 48px;
+            font-size: 42px;
+            max-width: 90%;
             text-align: center;
+            margin: 12px 0;
+            line-height: 1.2;
         }
-
+        
+        p {
+            text-align: center;
+            font-size: 15px;
+            max-width: 85%;
+            line-height: 1.5;
+        }
+        
+        button,
+        a {
+            margin-top: 15px;
+            padding: 13px 28px;
+        }
+        
         > img:last-child {
             height: auto;
-            max-width: 420px;
-            width: 100%;
+            max-height: 420px;
+            width: auto;
+            max-width: 85%;
+            order: 3;
+            align-self: center;
         }
     }
-
+    
+    
+    /* Clothes */
     .clothes {
-        padding: 20px;
+        padding: 30px;
 
         ul {
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
         }
-
+        
         .product-card {
-            min-height: 280px;
-
-            h3 {
-                font-size: 18px;
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+                grid-area: auto;
             }
         }
     }
+    
 
+    /* Shipping&Payments */
     .shipping-payments {
-        margin: 20px auto;
-        padding: 20px;
-        flex-wrap: wrap;
-
+        flex-direction: column;
+        
         article {
-            flex: 1 1 220px;
-            padding: 10px 15px;
-
-            &:not(:last-child) {
-                border-right: none;
-                border-bottom: 1px solid #e0e0e0;
+            border-right: none !important;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 0;
+            
+            &:last-child {
+                border-bottom: none;
             }
         }
     }
 
+    
+    /* StylishCollection */
     .stylish-collection {
-        min-height: 420px;
-
         h2 {
-            font-size: 48px;
+            font-size: 50px;
+        }
+        
+        h3 {
+            font-size: 18px;
         }
     }
+    
 
-    .new-arrivals {
-        padding: 20px 0;
-
-        h2 {
-            font-size: 40px;
-        }
-
-        ul {
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-    }
-
+    /* Carrusel */
     .carrusel {
-        margin: 40px auto;
-
         .car-imagenes {
             grid-template-columns: repeat(2, 1fr);
-            gap: 24px 12px;
-        }
-
-        img {
-            width: 100%;
-            height: 420px;
-        }
-
-        .form-center {
-            h2 {
-                font-size: 44px;
-            }
-
-            .iconos {
-                width: 240px;
-                max-width: 80%;
-                height: auto;
-                margin: 12px auto 0;
-            }
+            gap: 30px 15px;
         }
     }
-
+    
+    /* FOOTER */
     footer {
         padding: 30px 0 0 0;
-
+        
         .footer {
-            padding: 0 20px;
-            gap: 24px;
-        }
-
-        .footer-wrapper {
-            gap: 30px;
-            flex-wrap: wrap;
-            justify-content: flex-start;
+            padding: 0 30px;
+            gap: 25px;
+            
+            .footer-logo {
+                min-width: auto;
+                text-align: left;
+                flex: 1 1 100%;
+                
+                img {
+                    width: 140px;
+                }
+                
+                span {
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+            }
+            
+            .footer-wrapper {
+                flex: 1 1 100%;
+                justify-content: space-between;
+                gap: 30px;
+                min-width: auto;
+            }
+            
+            .footer-column {
+                min-width: 140px;
+                
+                h4 {
+                    font-size: 16px;
+                    margin-bottom: 12px;
+                }
+                
+                ul li {
+                    font-size: 14px;
+                    margin-bottom: 8px;
+                }
+            }
+            
+            .footer-payments {
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                gap: 14px;
+                
+                img {
+                    height: 24px;
+                }
+            }
         }
     }
 }
@@ -767,76 +846,100 @@ footer {
 
 /* MOVIL */
 @media screen and (max-width: 700px) {
+    
+    /* HEADER */
+    header nav {
+        padding: 10px 20px;
+    }
+    
     .header-top {
-        > div:first-child {
-            padding: 8px 12px;
-        }
-
+        font-size: 12px;
+        
         div {
-            gap: 8px;
+            gap: 10px;
         }
     }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding: 8px 12px 14px;
-
-        img {
-            height: 42px;
-        }
-
+    
+    .nav-main {
         ul {
-            gap: 16px;
+            gap: 15px;
+            font-size: 12px;
+        }
+        
+        img {
+            height: 30px;
         }
     }
+    
 
+    /* Dresses&Looks */
     .dresses-looks {
-        padding: 30px 16px;
-        gap: 20px;
-
+        padding: 40px 20px;
+        gap: 25px;
+        
+        aside {
+            gap: 12px;
+            
+            img {
+                width: 35px;
+            }
+        }
+        
         span {
-            font-size: 16px;
+            font-size: 14px;
+            margin-bottom: 5px;
         }
-
+        
         h2 {
-            font-size: 34px;
+            font-size: 32px;
+            max-width: 100%;
+            padding: 0 10px;
+            line-height: 1.3;
+            margin: 10px 0;
         }
-
+        
+        p {
+            font-size: 15px;
+            max-width: 90%;
+            line-height: 1.5;
+        }
+        
         button,
         a {
-            padding: 12px 20px;
+            padding: 12px 28px;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+        
+        > img:last-child {
+            max-height: 350px;
+            max-width: 90%;
         }
     }
+    
 
+    /* Clothes */
     .clothes {
-        padding: 16px;
+        padding: 20px 15px;
+        gap: 15px;
 
         ul {
-            grid-template-columns: 1fr;
+            gap: 15px;
         }
-
+        
         .product-card {
-            min-height: 240px;
-
+            min-height: 300px;
+            
             &::after {
                 width: 70%;
             }
-
-            span {
-                left: 20px;
-            }
-
-            h3 {
-                left: 20px;
-                font-size: 17px;
-            }
-
+            
+            span,
+            h3,
             a {
                 left: 20px;
             }
-
+            
             &.align-right {
                 span,
                 h3,
@@ -846,99 +949,116 @@ footer {
             }
         }
     }
+    
 
+    /* Shipping&Payments */
     .shipping-payments {
-        padding: 10px 12px;
-
-        article {
-            flex: 1 1 100%;
-            padding: 12px 0;
-        }
-
-        h3 {
-            font-size: 18px;
-        }
+        padding: 20px 15px;
     }
+    
 
+    /* StylishCollection */
     .stylish-collection {
-        min-height: 340px;
-        padding: 20px 10px;
-
+        min-height: 400px;
+        padding: 20px;
+        
         h2 {
-            font-size: 34px;
+            font-size: 36px;
         }
-
+        
         h3 {
             font-size: 16px;
         }
-    }
-
-    .new-arrivals {
-        margin: 20px auto;
-
-        h2 {
-            font-size: 32px;
-        }
-
-        p {
-            padding: 0 10px;
-        }
-    }
-
-    .carrusel {
-        margin: 30px auto;
-
-        .car-imagenes {
-            grid-template-columns: 1fr;
-            gap: 18px;
-        }
-
-        img {
-            height: 380px;
-        }
-
+        
         button {
             padding: 10px 24px;
         }
+    }
+    
 
-        .form-center {
-            h2 {
-                font-size: 32px;
-            }
+    /* NewArrivals */
+    .new-arrivals {
+        padding: 20px 15px;
+    }
+    
+    .new-arrivals h3 {
+        font-size: 24px;
+    }
+    
+    .new-arrivals ul {
+        gap: 20px;
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+    
 
-            form {
-                flex-direction: column;
-                gap: 12px;
+    /* Carrusel */
+    .carrusel {
+        padding: 0 15px;
 
-                input[type="email"] {
-                    width: 100%;
-                    min-width: 0;
-                    max-width: 320px;
-                }
-            }
-
-            .iconos {
-                width: 200px;
-                max-width: 85%;
-                height: auto;
-                margin: 10px auto 0;
-            }
+        .car-imagenes {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        
+        img {
+            max-width: 100%;
         }
     }
-
+    
+    
+    /* FOOTER */
     footer {
-        padding: 24px 0 0 0;
-
+        padding: 30px 0 0 0;
+        
         .footer {
-            padding: 0 16px;
-        }
-
-        .footer-logo {
-            min-width: 100%;
-        }
-
-        .footer-wrapper {
-            width: 100%;
+            padding: 0 20px;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            
+            .footer-logo {
+                min-width: 100%;
+                text-align: center;
+                
+                img {
+                    width: 140px;
+                }
+                
+                span {
+                    font-size: 14px;
+                }
+            }
+            
+            .footer-wrapper {
+                flex-direction: column;
+                width: 100%;
+                gap: 30px;
+                align-items: center;
+            }
+            
+            .footer-column {
+                text-align: center;
+                width: 100%;
+                
+                h4 {
+                    font-size: 16px;
+                }
+                
+                ul li {
+                    font-size: 14px;
+                }
+            }
+            
+            .footer-payments {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                
+                img {
+                    height: 22px;
+                }
+            }
         }
     }
 }
