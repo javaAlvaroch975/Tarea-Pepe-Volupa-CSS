@@ -706,13 +706,6 @@ footer {
             line-height: 1.2;
         }
         
-        p {
-            text-align: center;
-            font-size: 15px;
-            max-width: 85%;
-            line-height: 1.5;
-        }
-        
         button,
         a {
             margin-top: 15px;
@@ -860,7 +853,7 @@ footer {
         }
     }
     
-    .nav-main {
+    nav {
         ul {
             gap: 15px;
             font-size: 12px;
@@ -896,12 +889,6 @@ footer {
             padding: 0 10px;
             line-height: 1.3;
             margin: 10px 0;
-        }
-        
-        p {
-            font-size: 15px;
-            max-width: 90%;
-            line-height: 1.5;
         }
         
         button,
@@ -981,7 +968,7 @@ footer {
         padding: 20px 15px;
     }
     
-    .new-arrivals h3 {
+    .new-arrivals h2 {
         font-size: 24px;
     }
     
