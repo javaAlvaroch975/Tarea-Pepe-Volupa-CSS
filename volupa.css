@@ -16,7 +16,7 @@ body {
 
 /* HEADER CON NAVS */
 header {
-    padding-bottom: 20px;
+    padding-bottom: 4px;
 }
 
 .form-money-language {
@@ -50,7 +50,7 @@ header {
 .header-top {
     background-color: #222;
     color: white;
-    padding: 10px 0;
+    padding: 6px 0;
     display: flex;
     justify-content: center;
 
@@ -60,7 +60,7 @@ header {
         justify-content: space-between;
         max-width: 1200px;
         width: 100%;
-        padding: 20 40px;
+        padding: 8px 40px;
     }
 
     div {
@@ -85,10 +85,10 @@ nav {
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: 2px 40px;
 
     img {
-        height: 40px;
+        height: 50px;
     }
 
     ul {
@@ -306,7 +306,7 @@ nav {
         margin-bottom: 15px;
     }
 
-    h3 {
+    h2 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 800;
         color: #222;
