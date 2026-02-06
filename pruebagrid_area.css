@@ -1,0 +1,48 @@
+.parent {
+    background-color: lightgray;
+    min-height: 200px;
+    display: grid;
+    grid-template-areas: /* el grid area se divide en tipos, cada tipo debe ser fraccionado en un numero 2 head y 2 foot,
+     ocuparan todo 1 menu y un content mitad */
+    "head head" 
+    "menu content"
+    "foot foot";
+
+    grid-template-rows:  100px 500px 100px;
+
+    header {
+        grid-area: head;
+        background-color: indigo;
+    }
+    
+    .menu {
+        grid-area: menu;
+        background-color: darkred;
+
+    }
+
+    .content {
+        grid-area: content;
+        background-color: darkgreen;
+    }
+
+     footer {
+        grid-area: foot;
+        background-color: darkslategrey;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .parent {
+        grid-template-areas: 
+    "foot foot"
+    "menu content"
+    "head head";
+
+    grid-template-rows:  100px 500px 100px;
+
+    
+    }
+}
+

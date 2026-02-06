@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Montserrat:wght@800&display=swap');
+
+/* Títulos de Dresses&Looks, StylishCollection y NewArrivals */
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #222;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+
+
+        &:visited {
+            color: white;;
+        }
+
+        &:hover {
+            color: orange;
+        }        
+    }
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+
+    ul {
+        margin-top: 25px;
+        display: flex;
+        gap: 40px;
+        list-style: none;
+
+        &:last-child {
+            padding-right: 135px;
+        }
+    }
+
+    img {
+        padding-left: 30px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:visited {
+            color: black;
+        }
+
+        &:hover {
+            color: orange;
+        }
+    }
+}
+
+.repuestos {
+    background-color: white;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column; /* Para que la lista esté arriba y las ofertas abajo */
+    align-items: center;
+}
+
+.piezas {
+    width: 100%;
+    max-width: 1200px; /* Para que no se estire infinito en pantallas grandes */
+
+    ul {
+        display: flex;
+        justify-content: center; /* Centra el grupo de iconos */
+        list-style: none;
+        gap: 40px; /* Espacio entre cada repuesto */
+        padding: 0;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column; /* Imagen arriba, texto abajo */
+        align-items: center;
+    }
+
+    img {
+        width: 200px; /* Tamaño fijo para que todos los iconos sean iguales */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        color: gray;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 50px;
+
+    img {
+        gap: 40px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    h3{
+        color: gray;
+        font-size: 14px;
+    }
+}
+

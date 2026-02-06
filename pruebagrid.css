@@ -1,0 +1,14 @@
+.parent {
+    background-color: lightgray;
+    min-height: 300px;
+    display: grid;
+    justify-items: start;
+    align-items: start;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: 75px 125px;
+}
+
+.item2 {
+    background-color: darkred;
+    place-self: end;
+}
